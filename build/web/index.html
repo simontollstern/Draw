@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Draw</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+    </head>
+    <body onload="init()">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#testModal">Small modal</button>
+        <div class="container-full">
+            <div class="col-md-3">
+                <div class="wrap">
+                    <div class="jumbotron"><h1>DRAW</h1></div>
+                    <div class="sideheader">
+                        <hr />
+                        <p>Players in session</p>
+                        <hr />
+                    </div>
+                    <div class="textAreaWrap">
+                        <textarea readonly="readonly" id="usersTextArea"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jumbotron">
+                    <h1>STATUS/TOOLS</h1>
+                </div>
+                <div id="midMain">
+                    <canvas id="canvas" height="510" width="681"></canvas>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wrap">
+                    <div class="jumbotron"><h1 id="timer">30</h1></div>
+                    <div class="sideheader">
+                        <hr />
+                        <p>Chat</p>
+                        <hr />
+                    </div>
+                    <div class="textAreaWrap">
+                        <textarea readonly="readonly" id="messageTextArea"></textarea>
+                    </div>
+                    <fieldset class="">
+                        <input type="text" autocomplete="off" placeholder="Write something.." id="messageInput" />
+                        <button onclick="sendMessage()" id="inputButton">Send</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="testModal" data-keyboard="false" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <h3>What's your name?</h3>
+                    <hr class="modalLine" />
+                    <input type="text" autocomplete="off" placeholder="Username.." id="usernameInput" />
+                    <button onclick="" id="usernameButton">Ok</button>
+                    <hr class="modalLine" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

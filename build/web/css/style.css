@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*BOOTSTRAP EDITS*/
+.col-md-3,
+.col-md-6{
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+}
+.jumbotron{
+    padding: 20px;
+    text-align: center;
+    background-color: #444;
+    color: #ccc;
+}
+.col-md-6 > .jumbotron{
+    margin: 0;
+}
+
+/*OWN CLASSES & IDS*/
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+.wrap{
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+}
+#canvas{
+    padding: 0;
+    margin: 0;
+    border: 1px solid #333;
+    cursor: crosshair;
+    background-color: #555;
+}
+textarea{
+    resize: none;
+    background-color: #333;
+    border: none;
+    color: #ccc;
+}
+#timerwrap{
+    height: 20vh;
+    color: #ccc;
+    line-height: 20vh;
+    text-align: center;
+}
+#logowrap{
+    height: 20vh;
+    color: #ccc;
+    line-height: 20vh;
+    text-align: center;
+}
+#messageInput{
+    width: 80%;
+    border: none;
+    font-size: 18px;
+    background-color: #333;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+#inputButton{
+    width: 20%;
+    border: none;
+    font-size: 18px;
+    border-bottom: 2px solid #ccc;
+    background-color: #333;
+    color: #ccc;
+    float: right;
+    outline: none;
+}
+#usersTextArea{
+    height: 70vh;
+    float: left;
+    outline: none;
+}
+#messageTextArea{
+    height: 65vh;
+    color: #ccc;
+    float: left;
+    outline: none;
+}
+fieldset{
+    border:  none;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+textarea{
+    width: 90%;
+    padding: 0;
+    background-color: #444;
+}
+h1{
+    padding: 0;
+    margin: 0;
+    font-size: 70px;
+}
+hr{
+    margin: 0;
+    padding: 0;
+}
+.sideheader{
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+p{
+    color: #ccc;
+    margin: 10px;
+}
+.textAreaWrap{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+#testModal{
+    text-align: center;
+}
+.modalLine{
+    margin: 20px;
+}
